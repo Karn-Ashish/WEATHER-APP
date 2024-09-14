@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: floralwhite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,2);
+    text-align: center;
+
+    box-shadow: 0 0 10px rgba(255, 128, 0, 0.5); /* Adjust the color and opacity as needed */
+    animation: fire-animation 2s infinite;
+}
+
+@keyframes fire-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 128, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(247, 0, 255, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 128, 0, 0.5);
+    }
+}
+
+
+input{
+    padding: 10px;
+    width: 70%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
